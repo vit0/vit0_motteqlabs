@@ -3,51 +3,68 @@
 <head>
 	<title>Minimal like theme</title>
 
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<script type="text/javascript" src="http://www.example.com/js/img-sizer.js"></script> 
+	<script type="text/javascript"> addLoadEvent(function() { 
+		if (document.getElementById && document.getElementsByTagName) { 
+			var aImgs = document.getElementById("content").getElementsByTagName("img"); imgSizer.collate(aImgs); } 
+		}); 
+	</script>
 
 </head>
 <body>
 
 	<div id="wrapper">
+		
 		<!-- header -->
-		<div class="header"> header
+		<div class="header">
 			<!-- logo image -->
 			<img src=""/>
 			<!-- links in header -->
-			<div id="links"> links
-				<ul>
-					<li><a href="#"> Products </a></li>
-					<li>|<a href="#"> Services </a></li>
-					<li>|<a href="#"> Contact </a></li>
-				</ul>
+			<div id="links">
+				<div class="verticalLine"><div class="menu"><a href="#"> Products </a></div></div>
+				<div class="verticalLine"><div class="menu"><a href="#"> Services </a></div></div>
+				<div class="menu"><a href="#"> Contact </a></div>
 			</div>
 		</div>
+		
 		<!-- banner and three buttons on up-right corner of it -->
-		<div class="banner"> banner
-			<div class="button_up" id="first"></div> 
-			<div class="button_up" id="second"></div>
-			<div class="button_up" id="third"></div>
+		<div class="banner">
+			<div id="banner_image"></div>
+			<a href="#"><div class="button_up" id="third"></div></a>
+			<a href="#"><div class="button_up" id="second"></div></a>
+			<a href="#"><div class="button_up" id="first"></div></a>
+			
 		</div>
+		
 		<!-- about  -->
 		<div class="about"> about
 			<img src=""/>
 		</div>
+		
 		<!--six clickable buttons -->
-		<div class="button_center">button </div>
-		<div class="button_center">button </div>
-		<div class="button_center">button </div>
-		<div class="button_center">button </div>
-		<div class="button_center">button </div>
-		<div class="button_center">button </div>
+		<div id="buttons_center">
+			<div>button </div>
+			<div>button </div>
+			<div>button </div>
+			<div>button </div>
+			<div>button </div>
+			<div>button </div>
+		</div>
+		
 		<!-- changable gallery -->
 		<div class="gallery">gallery</div>
+		
 		<!-- two info divs -->
 		<div class="info" id="bigger">  info
 		</div>
 		<div class="info" id="smaller"> info
 			<img id="smaller_img" src=""/>
 		</div>
+		
 		<!-- footer -->
 		<div id="footer"> footer
 			<p> Copyright CSS Author </p>
