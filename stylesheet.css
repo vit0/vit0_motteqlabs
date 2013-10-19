@@ -152,80 +152,53 @@ div {
 	min-width: 100%;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-	.tabs nav {
-		background: #FFFFFF;
+	.tabs a {
+	    width: 16.667%; 
+	    height: 120px;
+	    margin: 0;
+	    cursor: pointer; 
+	    float: left; 
+	    text-align: left; 
 	}
-		.tabs nav button {
-			width: 16.667%;
-			height: 120px;
-			float: left;
-			position: relative;
-			cursor: pointer;
-			border: none;
+
+		.tabs #button_center_first {
+			
+			background-image: url('images/button_center_1.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #01646c;
 		}
-		.tabs nav button:before {
-			margin-right: 10px;
-			font-size: 1.8em;
-			line-height: 0.4em;
+		.tabs #button_center_second {
+			background-image: url('images/button_center_2.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #097b84;
+		}
+		.tabs #button_center_third {
+			background-image: url('images/button_center_3.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #118f99;
+		}
+		.tabs #button_center_fourth {
+			background-image: url('images/button_center_4.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #1da0aa;
+		}
+		.tabs #button_center_fifth {
+			background-image: url('images/button_center_5.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #29b7c2;
+		}
+		.tabs #button_center_sixth {
+			background-image: url('images/button_center_6.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: #3ccad5;
 		}
 
-	 		.tabs nav button:first-child {
-
-	 		}
-	 		.activetab {
-	 			border-top: 2px solid #737373 !important; 
-	 		}
-		
-		/* window with tab content */
-		.tabs .text_tabs {
-			background-color: #01646C;
-			clear: both;
-		}
-			.tabs .text_tabs div {
-				padding: 12px;
-				font-size: 0.8em;
-			}
-			.visibletext {
-				display: block !important;
-			}
-
-			.tabs nav #button_center_first {
-				
-				background-image: url('images/button_center_1.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #01646c;
-			}
-			.tabs nav #button_center_second {
-				background-image: url('images/button_center_2.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #097b84;
-			}
-			.tabs nav #button_center_third {
-				background-image: url('images/button_center_3.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #118f99;
-			}
-			.tabs nav #button_center_fourth {
-				background-image: url('images/button_center_4.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #1da0aa;
-			}
-			.tabs nav #button_center_fifth {
-				background-image: url('images/button_center_5.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #29b7c2;
-			}
-			.tabs nav #button_center_sixth {
-				background-image: url('images/button_center_6.png');
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: #3ccad5;
-			}
 
 .info {
 	width: 100%;
