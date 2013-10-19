@@ -45,14 +45,14 @@ div {
 			width: 360px;
 			max-width: 100%;
 			height: 60px;
-			font-family: sans-serif;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 			float: right;
 			margin-top: 40px;
 			margin-right: 50px;
 		}
 		#links a {
 			text-decoration: none;
-			font-family: Calibri,sans-serif;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 		}
 		#links a:hover {
 			border-bottom: 3px solid #13B9AB;
@@ -93,7 +93,7 @@ div {
 }
 		#product_info p {
 			color: #FFFFFF;
-			font-family: sans-serif;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 		}
 
 .button_up {
@@ -139,69 +139,93 @@ div {
 }
 		.about #about_title, #about_content {
 			text-align: center;
-			font-family: Calibri, sans-serif;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 			color: #AEAEAE;
 		}
 		#about_title {
 			color: #4B4B4B;
 		}
 
-#buttons_center div {
-	padding: 0px; 
-	width: 16.667%;
-	height: 120px;
-	min-height: 100%; 
-	max-width: 100%; 
-	min-width: 120px;
-	float: left;
-	display: inline-block; 
-	position: relative;
+
+.tabs {
+	width:100%;
+	min-width: 100%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-		#button_center_first {
-			background-image: url('images/button_center_1.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #01646c;
+	.tabs nav {
+		background: #FFFFFF;
+	}
+		.tabs nav button {
+			width: 16.667%;
+			height: 120px;
+			float: left;
+			position: relative;
+			cursor: pointer;
+			border: none;
 		}
-		#button_center_second {
-			background-image: url('images/button_center_2.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #097b84;
-		}
-		#button_center_third {
-			background-image: url('images/button_center_3.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #118f99;
-		}
-		#button_center_fourth {
-			background-image: url('images/button_center_4.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #1da0aa;
-		}
-		#button_center_fifth {
-			background-image: url('images/button_center_5.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #29b7c2;
-		}
-		#button_center_sixth {
-			background-image: url('images/button_center_6.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-color: #3ccad5;
+		.tabs nav button:before {
+			margin-right: 10px;
+			font-size: 1.8em;
+			line-height: 0.4em;
 		}
 
-.gallery {
-	width: 100%;
-	max-width: 100%;
-	height: 530px;
-	background-color: green;
-	float: left;
-}
+	 		.tabs nav button:first-child {
 
+	 		}
+	 		.activetab {
+	 			border-top: 2px solid #737373 !important; 
+	 		}
+		
+		/* window with tab content */
+		.tabs .text_tabs {
+			background-color: #01646C;
+			clear: both;
+		}
+			.tabs .text_tabs div {
+				padding: 12px;
+				font-size: 0.8em;
+			}
+			.visibletext {
+				display: block !important;
+			}
+
+			.tabs nav #button_center_first {
+				
+				background-image: url('images/button_center_1.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #01646c;
+			}
+			.tabs nav #button_center_second {
+				background-image: url('images/button_center_2.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #097b84;
+			}
+			.tabs nav #button_center_third {
+				background-image: url('images/button_center_3.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #118f99;
+			}
+			.tabs nav #button_center_fourth {
+				background-image: url('images/button_center_4.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #1da0aa;
+			}
+			.tabs nav #button_center_fifth {
+				background-image: url('images/button_center_5.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #29b7c2;
+			}
+			.tabs nav #button_center_sixth {
+				background-image: url('images/button_center_6.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #3ccad5;
+			}
 
 .info {
 	width: 100%;
@@ -215,12 +239,17 @@ div {
 		width: 65%;
 		float: left;
 		color: #3ccad5;
+		text-align: center;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
 		#bigger #one {
-		font-size: 5em;
+			font-size: 8em;
+			font-weight: bold;
+			margin-top: 40px;
+			margin-bottom: -40px;
 		}
 		#two {
-			font-size: 2em;
+			font-size: 4em;
 		}
 
 	#smaller {
@@ -237,5 +266,9 @@ div {
 	max-width: 100%;
 	height: 100px;
 	float: left;
-	background-color: green;
+	text-align: center;
+	padding-top: 10px;
+	color: #AEAEAE;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
 }
