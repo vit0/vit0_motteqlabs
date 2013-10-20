@@ -20,7 +20,9 @@ div {
 }
 a {
 	text-decoration: none;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
+}
+* h1, h2, h3, p, a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
@@ -49,14 +51,12 @@ a {
 			width: 360px;
 			max-width: 100%;
 			height: 60px;
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 			float: right;
 			margin-top: 40px;
 			margin-right: 50px;
 		}
 		#links a {
 			text-decoration: none;
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 		}
 		#links a:hover {
 			border-bottom: 3px solid #13B9AB;
@@ -85,26 +85,27 @@ a {
 }
 
 #product_info {
-	max-width: 100%;
-	width:35%;
-	margin-top: 180px;
-	margin-right: -260px;
-	float:right;
+        max-width: 100%;
+        width:35%;
+        margin-top: 180px;
+        margin-right: -260px;
+        float:right;
 }
-		#product_info p {
-			color: #FFFFFF;
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
-		}
+        #product_info p {
+            color: #FFFFFF;
+            text-align: left;
+            line-height: 60%;
+        }
 
 .button_up {
-	margin-top: 1px;
-	width:10%;
-	height: 90px;
-	max-width: 100%;
-	float:right;
-	opacity: 0.8;
-	position: static;
-	display: inline-block;
+        margin-top: 1px;
+        width:10%;
+        height: 90px;
+        max-width: 100%;
+        float:right;
+        opacity: 0.8;
+        position: static;
+        display: inline-block;
 }
 		#first {
 			background-color: #079f98;
@@ -137,7 +138,6 @@ a {
 }
 		.about #about_title, #about_content {
 			text-align: center;
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;;
 			color: #AEAEAE;
 		}
 		#about_title {
@@ -152,72 +152,120 @@ a {
 #tabs {
 	font-size: 90%;
 }
-#tabs ul {
-	float: left;
-	width: 100%;
-}
-#tabs li {
-	list-style: none;
-	max-width: 100%;
-}
-* html #tabs li {
-	display: inline-block;
-}
-#tabs li, #tabs li a {
-	float: left;
-	text-align: center;
-}
-#tabs ul li.active {
-}
-#tabs ul li.active a {
-	color: #fff;
-	float: left;
-}
-	#tabs ul li a img {
-		vertical-align: middle;
+	#tabs ul {
+		width: 100%;
 	}
+	#tabs li {
+		list-style: none;
+		max-width: 100%;
+		width: 16.667%;
+	}
+		#tabs li div {
+		}
+		* html #tabs li {
+			display: inline-block;
+		}
+		#tabs li, #tabs li a {
+			float: left;
+			text-align: center;
+		}
+		#tabs ul li.active {
+		}
+		#tabs ul li.active a {
+			color: #fff;
+			float: left;
+		}
+		
 #tabs div {
-	background: green;
 	clear: both;
-	min-height: 530px;
+	height: 530px;
 }
+	#tabs #tab-1 {
+		background-color: #01646c;
+	}		
+		#tabs #tab-1 #laptop {
+			margin-left: 140px;
+			margin-top: 60px;
+		}
+		#tabs #tab-1 #buynow {
+			position: relative;
+		}
+		#tabs #tab-1 h2,p {
+			text-align: right;
+			color: #FFFFFF;
+			margin-right: 140px;
+			margin-top: 100px;
+		}
+			#tab-1 {
+				background-image: url('images/laptop.png');
+				background-position: 30%;
+				background-repeat: no-repeat;
+				z-index: -1;
+			}
+				#tab-1 #buynow {
+					left: 68%;
+					top: 48%;
+				}
 
-#tabs div h3 {
 
-}
-#tabs div p {
-	line-height: 100%;
-}
+	#tabs #tab-2 {
+		background-color: #097b84;
+	}
+		#tabs #tab-2 p {
+			color: #FFFFFF;
+			text-align: center;
+		}
+	#tabs #tab-3 {
+		background-color: #118f99;
+	}
+	#tabs #tab-4 {
+		background-color: #1da0aa;
+	}
+	#tabs #tab-5 {
+		background-color: #29b7c2;
+	}
+	#tabs #tab-6 {
+		background-color: #3ccad5;
+	}
+
 #tabs ul li a {
-	width: 120px;
+	margin-left: -40px;
+	width: 100%;
 	height: 120px;
 }
 		#tab_first {
+			background: url('images/button_center_1.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #01646c;
+			background-origin: 
 		}
 		#tab_second {
+			background: url('images/button_center_2.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #097b84;
 		}
 		#tab_third {
+			background: url('images/button_center_3.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #118f99;
 		}
 		#tab_fourth {
+			background: url('images/button_center_4.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #1da0aa;
 		}
 		#tab_fifth {
+			background: url('images/button_center_5.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #29b7c2;
 		}
 		#tab_sixth {
+			background: url('images/button_center_6.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #3ccad5;
@@ -237,18 +285,19 @@ a {
 		height: 510px;
 		width: 65%;
 		float: left;
-		color: #3ccad5;
-		text-align: center;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
-		#bigger #one {
+		#one {
 			font-size: 8em;
 			font-weight: bold;
 			margin-top: 40px;
 			margin-bottom: -40px;
+			color: #3ccad5;
+			text-align: center;
 		}
 		#two {
 			font-size: 4em;
+			color: #3ccad5;
+			text-align: center;
 		}
 
 	#smaller {
@@ -261,13 +310,11 @@ a {
 	}
 
 #footer {
+	color: #2A2A2A;
 	width: 100%;
 	max-width: 100%;
 	height: 100px;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
-	color: #AEAEAE;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-
 }
