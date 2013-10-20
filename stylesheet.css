@@ -244,42 +244,79 @@ a {
 	width: 100%;
 	height: 120px;
 }
+	
 		#tab_first {
 			background: url('images/button_center_1opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #01646c;
 		}
+			#tabs ul li #tab_first:active, #tab_first:visited {
+				background: url('images/button_center_1.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #01646c;
+			}
 		#tab_second {
 			background: url('images/button_center_2opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #097b84;
 		}
+			#tabs ul li #tab_second:active, #tab_second:visited {
+				background: url('images/button_center_2.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #097b84;
+			}
 		#tab_third {
 			background: url('images/button_center_3opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #118f99;
 		}
+			#tabs ul li #tab_third:active, #tab_third:visited {
+				background: url('images/button_center_3.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #118f99;
+			}
 		#tab_fourth {
 			background: url('images/button_center_4opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #1da0aa;
 		}
+			#tabs ul li #tab_fourth:active, #tab_fourth:visited {
+				background: url('images/button_center_4.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #1da0aa;
+			}
 		#tab_fifth {
 			background: url('images/button_center_5opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #29b7c2;
 		}
+			#tabs ul li #tab_fifth:active, #tab_fifth:visited {
+				background: url('images/button_center_5.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #29b7c2;
+			}
 		#tab_sixth {
 			background: url('images/button_center_6opa.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-color: #3ccad5;
 		}
+			#tabs ul li #tab_sixth:active, #tab_sixth:visited {
+				background: url('images/button_center_6.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #3ccad5;
+			}
 
 
 
